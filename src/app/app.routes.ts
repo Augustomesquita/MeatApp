@@ -9,7 +9,7 @@ import { MenuComponent } from './restaurant-detail/menu/menu.component';
 import { ReviewsComponent } from './restaurant-detail/reviews/reviews.component';
 
 export const ROUTES: Routes = [
-    { path: '', pathMatch: 'full' , redirectTo:'home' },
+    { path: '', pathMatch: 'full' , redirectTo: 'home' },
     { path: 'home', component: HomeComponent },
     { path: 'about', component: AboutComponent },
     { path: 'restaurants', component: RestaurantsComponent },
