@@ -7,7 +7,7 @@ import { CartItem } from './../restaurant-detail/shopping-cart/shopping-cart.mod
 @Injectable()
 export class OrderService {
 
-    constructor(private cartService: ShoppingCartService){}
+    constructor(private cartService: ShoppingCartService) { }
 
     itemsValue(): number {
         return this.cartService.total()
@@ -17,11 +17,11 @@ export class OrderService {
         return this.cartService.items
     }
 
-    increaseQty(item: CartItem){
+    increaseQty(item: CartItem) {
         this.cartService.increaseQty(item)
     }
 
-    decreaseQty(item: CartItem){
+    decreaseQty(item: CartItem) {
         this.cartService.decreaseQty(item)
     }
 

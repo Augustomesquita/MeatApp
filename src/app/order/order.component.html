@@ -64,14 +64,12 @@
           <div class="form-group">
             <mt-radio [options]="paymentOptions" name="paymentOption" ngModel required></mt-radio>
           </div>
-
         </div>
+
         <!-- /.col -->
         <div class="col-sm-6 col-xs-12">
           <p class="lead">Frete e Total:</p>
-
-          <mt-delivery-costs [delivery]="delivery" [itemsValue]="itemsValue()">
-          </mt-delivery-costs>
+          <mt-delivery-costs [delivery]="delivery" [itemsValue]="itemsValue()"></mt-delivery-costs>
         </div>
         <!-- /.col -->
       </div>
