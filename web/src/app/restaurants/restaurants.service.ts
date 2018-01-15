@@ -23,21 +23,21 @@ export class RestaurantsService {
             .catch(ErrorHandler.handleError);
     }
 
-    restaurantById(id: string): Observable<Restaurant> {
-        return this.http.get(`${MEAT_API}/restaurants/${id}`)
+    restaurantById(restaurantId: string): Observable<Restaurant> {
+        return this.http.get(`${MEAT_API}/restaurants/${restaurantId}`)
             .map(response => response.json())
             .catch(ErrorHandler.handleError);
     }
 
-    restaurantReview(id: string): Observable<any> {
-        return this.http.get(`${MEAT_API}/restaurants/${id}/reviews`)
+    restaurantReview(restaurantId: string): Observable<any> {
+        return this.http.get(`${MEAT_API}/restaurants/${restaurantId}/reviews`)
             .map(response => response.json())
             .catch(ErrorHandler.handleError);
     }
 
-    menuOfRestaurant(id: string): Observable<MenuItem[]> {
-        return this.http.get(`${MEAT_API}/restaurants/${id}/menu`)
-        .map(response => response.json())
-        .catch(ErrorHandler.handleError);
+    menuOfRestaurant(restaurantId: string): Observable<MenuItem[]> {
+        return this.http.get(`${MEAT_API}/restaurants/${restaurantId}/menu`)
+            .map(response => response.json())
+            .catch(ErrorHandler.handleError);
     }
 }

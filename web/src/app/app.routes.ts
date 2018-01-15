@@ -15,7 +15,7 @@ export const ROUTES: Routes = [
     { path: 'about', component: AboutComponent },
     { path: 'restaurants', component: RestaurantsComponent },
     {
-        path: 'restaurants/:id', component: RestaurantDetailComponent,
+        path: 'restaurants/:restaurantId', component: RestaurantDetailComponent,
         children: [
             { path: '', pathMatch: 'full', redirectTo: 'menu' },
             { path: 'menu', component: MenuComponent },

@@ -1,35 +1,39 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
+# ----- WEB -----
 # compiled output
-/dist
-/tmp
+/web/dist
+/web/tmp
 
 # dependencies
-/node_modules
-/bower_components
+/web/node_modules
+/web/bower_components
 
 # IDEs and editors
-/.idea
-/.vscode
-.project
-.classpath
-.c9/
-*.launch
-.settings/
+/web/.idea
+/web/.vscode
+/web.project
+/web.classpath
+/web.c9/
+/web*.launch
+/web.settings/
 
 # misc
-/.sass-cache
-/connect.lock
-/coverage/*
-/libpeerconnection.log
-npm-debug.log
-testem.log
-/typings
+/web/.sass-cache
+/web/connect.lock
+/web/coverage/*
+/web/libpeerconnection.log
+/webnpm-debug.log
+/webtestem.log
+/web/typings
 
 # e2e
-/e2e/*.js
-/e2e/*.map
+/web/e2e/*.js
+/web/e2e/*.map
 
 #System Files
-.DS_Store
-Thumbs.db
+/web/.DS_Store
+/web/Thumbs.db
+
+# ----- API -----
+/api/target/
