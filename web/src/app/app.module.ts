@@ -1,3 +1,4 @@
+import { HighlightDirective } from './shared/directive/highlight.directive';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, LOCALE_ID } from '@angular/core';
 import { HttpModule } from '@angular/http';
@@ -46,8 +47,10 @@ import { DeliveryCostsComponent } from './order/delivery-costs/delivery-costs.co
     InputComponent,
     RadioComponent,
     OrderItemsComponent,
-    DeliveryCostsComponent
+    DeliveryCostsComponent,
+    HighlightDirective
   ],
+  exports: [HighlightDirective],
   imports: [
     BrowserModule,
     HttpModule,
